@@ -1,0 +1,77 @@
+.HomePageWrapper {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.cardsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.playerCard {
+  width: 50%;
+  display: flex;
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 0 8px black;
+  color: black;
+  text-decoration: none;
+}
+
+.cardLeftDiv {
+  width: 40%;
+  background-color: blue;
+  display: flex;
+  justify-content: stretch;
+}
+.cardLeftDiv img {
+  width: 100%;
+}
+
+.cardRightDiv {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* PAGINATION STYLING */
+
+.paginationContainer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.paginationContainer a {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 1px solid var(--primary_color);
+  color: var(--primary_color);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+/* .paginationContainer a:hover {
+  color: #ffffff;
+  background-color: var(--primary_color);
+} */
+
+.pgtnDisabled a {
+  cursor: not-allowed;
+  color: #ccc;
+  border: 1px solid #ccc;
+}
+
+.pgtnActive a {
+  color: #ffffff;
+  background-color: var(--primary_color);
+}
